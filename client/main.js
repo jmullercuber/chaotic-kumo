@@ -16,6 +16,7 @@ function createWindow() {
   });
 
   win.loadFile("index.html");
+  win.setAlwaysOnTop(true);
 }
 
 // https://stackoverflow.com/a/66068492/2877687
