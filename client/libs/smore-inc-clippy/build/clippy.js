@@ -393,7 +393,7 @@ clippy.Agent.prototype = {
     console.log("Start drag");
     // pause animations
     this.pause();
-    this._balloon.hide(true);
+    // this._balloon.hide(true);
     this._offset = this._calculateClickOffset(e);
 
     this._moveHandle = $.proxy(this._dragMove, this);
@@ -441,7 +441,7 @@ clippy.Agent.prototype = {
     $(window).off("mousemove", this._moveHandle);
     $(window).off("mouseup", this._upHandle);
     // resume animations
-    this._balloon.show();
+    // this._balloon.show();
     this.reposition();
     this.resume();
   },
