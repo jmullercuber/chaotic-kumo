@@ -345,6 +345,7 @@ clippy.Agent.prototype = {
   },
 
   _onDoubleClick: function () {
+    console.log("Double clicked");
     if (!this.play("ClickedOn")) {
       this.animate();
     }
@@ -389,6 +390,7 @@ clippy.Agent.prototype = {
   /**************************** Drag ************************************/
 
   _startDrag: function (e) {
+    console.log("Start drag");
     // pause animations
     this.pause();
     this._balloon.hide(true);
@@ -433,6 +435,7 @@ clippy.Agent.prototype = {
   },
 
   _finishDrag: function () {
+    console.log("Finish drag");
     // window.clearTimeout(this._dragUpdateLoop);
     // remove handles
     $(window).off("mousemove", this._moveHandle);
