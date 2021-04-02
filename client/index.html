@@ -9,7 +9,9 @@
     <link rel="stylesheet" type="text/css" href="libs/smore-inc-clippy/build/clippy.css" media="all">
 </head>
 
-<body></body>
+<body>
+    <div class="dragger">D</div>
+</body>
 
 <!-- jQuery 1.7+ -->
 <script src="libs/jquery-3.6.0.min.js"></script>
@@ -22,6 +24,9 @@
     clippy.load("Clippy", function (agent) {
         // do anything with the loaded agent
         agent.show();
+        setInterval(() =>{
+            agent.speak("Need some help?");
+        }, 10000);
     });
 </script>
 </html>
