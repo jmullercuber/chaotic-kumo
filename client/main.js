@@ -7,7 +7,7 @@ function createWindow() {
     height: 400,
     frame: false,
     transparent: true,
-    // resizable: false,
+    resizable: false,
     fullscreenable: false,
     maximizable: false, // not implemented on Linux
     webPreferences: {
