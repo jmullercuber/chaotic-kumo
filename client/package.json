@@ -1,0 +1,26 @@
+{
+  "name": "chaotic-kumo-client",
+  "version": "1.0.0",
+  "description": "Frontend for Chaotic Kumo",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmullercuber/chaotic-kumo.git"
+  },
+  "keywords": [
+    "assistant"
+  ],
+  "author": "jmullercuber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmullercuber/chaotic-kumo/issues"
+  },
+  "homepage": "https://github.com/jmullercuber/chaotic-kumo#readme",
+  "devDependencies": {
+    "electron": "^12.0.2"
+  }
+}
