@@ -400,10 +400,10 @@ clippy.Agent.prototype = {
     $(window).on("mousemove", this._moveHandle);
     $(window).on("mouseup", this._upHandle);
 
-    this._dragUpdateLoop = window.setTimeout(
-      $.proxy(this._updateLocation, this),
-      10
-    );
+    // this._dragUpdateLoop = window.setTimeout(
+    //   $.proxy(this._updateLocation, this),
+    //   10
+    // );
   },
 
   _calculateClickOffset: function (e) {
@@ -416,24 +416,24 @@ clippy.Agent.prototype = {
     };
   },
 
-  _updateLocation: function () {
-    this._el.css({ top: this._targetY, left: this._taregtX });
-    this._dragUpdateLoop = window.setTimeout(
-      $.proxy(this._updateLocation, this),
-      10
-    );
-  },
+  //   _updateLocation: function () {
+  //     this._el.css({ top: this._targetY, left: this._taregtX });
+  //     this._dragUpdateLoop = window.setTimeout(
+  //       $.proxy(this._updateLocation, this),
+  //       10
+  //     );
+  //   },
 
   _dragMove: function (e) {
     e.preventDefault();
-    var x = e.clientX - this._offset.left;
-    var y = e.clientY - this._offset.top;
-    this._taregtX = x;
-    this._targetY = y;
+    // var x = e.clientX - this._offset.left;
+    // var y = e.clientY - this._offset.top;
+    // this._taregtX = x;
+    // this._targetY = y;
   },
 
   _finishDrag: function () {
-    window.clearTimeout(this._dragUpdateLoop);
+    // window.clearTimeout(this._dragUpdateLoop);
     // remove handles
     $(window).off("mousemove", this._moveHandle);
     $(window).off("mouseup", this._upHandle);
