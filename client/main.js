@@ -1,10 +1,13 @@
 const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("path");
 
+const IS_DEBUGGING = false
+
+
 function createWindow() {
   const win = new BrowserWindow({
-    width: 400,
-    height: 400,
+    width: IS_DEBUGGING ? 800 : 100 ,
+    height: IS_DEBUGGING ? 800 : 100,
     frame: false,
     icon: path.resolve(__dirname, "assets", "logo64x64.png"),
     transparent: true,
