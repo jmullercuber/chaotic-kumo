@@ -12,6 +12,7 @@ module.exports = {
       name: "@electron-forge/maker-squirrel",
       config: {
         name: "chaotic_kumo_client",
+        setupIcon: path.resolve(__dirname, "assets", "logo64x64.png")
       },
     },
     {
@@ -20,11 +21,19 @@ module.exports = {
     },
     {
       name: "@electron-forge/maker-deb",
-      config: {},
+      config: {
+        options: {
+          icon: path.resolve(__dirname, "assets", "logo64x64.png")
+        }
+      },
     },
     {
       name: "@electron-forge/maker-rpm",
-      config: {},
+      config: {
+        options: {
+          icon: path.resolve(__dirname, "assets", "logo64x64.png")
+        }
+      },
     },
   ],
   publishers: [
