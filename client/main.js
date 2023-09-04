@@ -6,6 +6,7 @@ function createWindow() {
     width: 400,
     height: 400,
     frame: false,
+    icon: path.resolve(__dirname, "assets", "logo64x64.png"),
     transparent: true,
     resizable: false,
     fullscreenable: false,

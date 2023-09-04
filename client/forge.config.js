@@ -1,5 +1,12 @@
+const path = require("path");
+
 module.exports = {
-  packagerConfig: {},
+  packagerConfig: {
+    icon: path.resolve(__dirname, "assets", "logo64x64.png"),
+    extraResource: [
+      path.resolve(__dirname, "assets", "logo64x64.png"),
+    ],
+  },
   makers: [
     {
       name: "@electron-forge/maker-squirrel",
